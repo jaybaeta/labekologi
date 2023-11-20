@@ -1,0 +1,378 @@
+/*//
+
+(c) Joaquim Baeta
+  for the Laboratory of Ecology and Conservation, Universitas Gadjah
+
+1......... Root
+2......... Base
+3......... Elements
+  3.1..... Side panel
+  3.2..... Jumbotron
+  3.2.1... Floating globe
+  3.2.2... Lab title
+  3.2.3... Jumbotron nav
+
+//*/
+
+/* 1. Root */
+
+  :root {
+    --recycled-green: #032b2b;
+		--kiss-a-frog: #b8c78a;
+		--ferntastic: #75aa5e;
+		--autumn-crocodile: #488051;
+		--ethereal-woods: #365c4d;
+		--emerald-forest: #284041;
+		--infinity: #1f2933;
+		--dark-teal: #173b40;
+		--black-pearl: #1b272c;
+		--black-stallion: #152021;
+		--cosmic-bit-flip: #0f2118;
+		--jedi-night: #0e211c;
+		--evergreen: #175041;
+		--viridian-attempt-1: #104c44;
+		--viridian-attempt-2: #123938;
+  }
+
+/* 2. Base */
+
+body {
+	background-color: var(--evergreen);
+	/*font-family: 'Gabarito' !important;*/
+	/*font-family: 'K2D' !important;*/
+	font-family: 'Manjari' !important;
+	/*font-family: 'Sarabun' !important;*/
+}
+
+/* 3. Elements */
+
+/* 3.1 Side panel  */
+
+.side-panel {
+	position: fixed;
+	right: -4.5rem;
+	width: 4.5rem;
+	height: 100vh;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.side-panel a, .side-panel .btn-empty {
+	color: #fff;
+}
+
+.side-panel .dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.side-panel .dropdown>.dropdown-toggle:active {
+  pointer-events: none;
+}
+
+.side-panel .dropstart {
+	display: flex;
+}
+
+.side-panel .dropstart .dropdown-menu {
+	align-self: center;
+	right: 4rem;
+}
+
+.side-panel .dropdown-menu {
+	background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  /*--bs-dropdown-padding-x: 0;
+  --bs-dropdown-padding-y: 0.5rem;
+  --bs-dropdown-spacer: 0.125rem;
+  --bs-dropdown-color: var(--bs-body-color);
+  --bs-dropdown-bg: var(--bs-body-bg);
+  --bs-dropdown-border-color: var(--bs-border-color-translucent);
+  --bs-dropdown-border-radius: var(--bs-border-radius);
+  --bs-dropdown-border-width: var(--bs-border-width);
+  --bs-dropdown-inner-border-radius: calc(var(--bs-border-radius) - var(--bs-border-width));
+  --bs-dropdown-divider-bg: var(--bs-border-color-translucent);
+  --bs-dropdown-divider-margin-y: 0.5rem;
+  --bs-dropdown-box-shadow: var(--bs-box-shadow);
+  --bs-dropdown-link-color: var(--bs-body-color);
+  --bs-dropdown-link-hover-color: var(--bs-body-color);
+  --bs-dropdown-link-hover-bg: var(--bs-tertiary-bg);
+  --bs-dropdown-link-active-color: #fff;
+  --bs-dropdown-link-active-bg: #0d6efd;
+  --bs-dropdown-link-disabled-color: var(--bs-tertiary-color);
+  --bs-dropdown-item-padding-x: 1rem;
+  --bs-dropdown-item-padding-y: 0.25rem;
+  --bs-dropdown-header-color: #6c757d;
+  --bs-dropdown-header-padding-x: 1rem;
+  --bs-dropdown-header-padding-y: 0.5rem;
+  position: absolute;
+  z-index: var(--bs-dropdown-zindex);
+  display: none;
+  min-width: var(--bs-dropdown-min-width);
+  padding: var(--bs-dropdown-padding-y) var(--bs-dropdown-padding-x);
+  margin: 0;
+  font-size: var(--bs-dropdown-font-size);
+  color: var(--bs-dropdown-color);
+  text-align: left;
+  list-style: none;
+  background-color: var(--bs-dropdown-bg);
+  background-clip: padding-box;
+  border: var(--bs-dropdown-border-width) solid var(--bs-dropdown-border-color);
+  border-radius: var(--bs-dropdown-border-radius);*/
+}
+
+/* 3.2 Jumbotron */
+
+.jumbotron {
+  background-color: var(--evergreen);
+  border-radius: 0;
+  margin-bottom: 0;
+  height: 100vh;
+}
+
+.jumbotron h1 {
+  font-size: 7rem !important;
+  font-weight: 400;
+  letter-spacing: 2px;
+	text-shadow: 5px 5px 5px var(--infinity);
+}
+
+.jumbotron h1, footer h1 {
+	/*font-family: 'Amatic SC' !important;*/
+	/*font-family: 'Kenia' !important;*/
+	/*font-family: 'Fugaz One' !important;*/
+	/*font-family: 'Offside' !important;*/
+	/*font-family: 'Elsie Swash Caps' !important;*/
+	font-family: 'Spirax' !important;
+}
+
+@media (max-width: 991px) {
+  .jumbotron {
+    height: 50vh;
+  }
+
+  .jumbotron h1 {
+    font-size: 4rem !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .jumbotron h1 {
+    font-size: 2.7rem !important;
+  }
+}
+
+@media (max-width: 433px) {
+  .jumbotron h1 {
+    font-size: 2.4rem !important;
+  }
+}
+
+@media (max-width: 575px) {
+  .jumbotron h3 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+/* 3.2.1 Floating globe */
+
+@keyframes globe {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.floating-globe {
+  animation: globe 4s ease infinite, fadeIn 2s; 
+  align-self: center;
+  width: 83.33333333%;
+  height: 80vh;
+  position: absolute;
+  text-align: center;
+}
+
+/* 3.2.2 Lab title */
+
+@keyframes labtitleAnimate {
+  from {
+    opacity: 0;
+    filter: blur(1rem);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+
+#lab-title {
+  position: relative;
+  text-align: center;
+  font-family: "Panton", sans-serif;
+}
+
+#lab-title p {
+  font-size: 4em;
+  margin: 0;
+  color: hsla(0,0%,0%,0);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  transform: rotate(-6.5deg) rotateX(23deg) skewX(5deg);
+  text-shadow: 
+    #fff 0 0px 1px, 
+    #ddd 0 1px 1px, 
+    #ccc 0 3px 2px,
+    #bbb 0 5px 2px, 
+    rgba(0,0,0,0.2) 0 0px 0px, 
+    rgba(0,0,0,0.1) 0 5px 0px,
+    rgba(0,0,0,0.2) 0 10px 0px;
+}
+
+#lab-title .the {
+  animation: labtitleAnimate 1s; 
+  animation-delay: 3.25s;
+  animation-fill-mode: backwards;
+}
+
+#lab-title .laboratory {
+  animation: labtitleAnimate 1s; 
+  animation-delay: 3s;
+  animation-fill-mode: backwards;
+}
+
+#lab-title .of {
+  animation: labtitleAnimate 1s; 
+  animation-delay: 3.35s;
+  animation-fill-mode: backwards;
+}
+
+#lab-title .ecology {
+  animation: labtitleAnimate 1s; 
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
+
+#lab-title .and {
+  animation: labtitleAnimate 1s; 
+  animation-delay: 3.45s;
+  animation-fill-mode: backwards;
+}
+
+#lab-title .conservation {
+  animation: labtitleAnimate 1s; 
+  animation-delay: 2s;
+  animation-fill-mode: backwards;
+}
+
+/* 3.2.3 Jumbotron nav */
+
+.jumbotron-nav {
+  z-index: 999;
+}
+
+.jumbotron-nav ul {
+  list-style: none;
+}
+
+.jumbotron-nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+@keyframes jumbotronnavAnimate {
+  from {
+    opacity: 0;
+    filter: blur(0.5rem);
+  }
+  to {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+.jumbotron-nav li:nth-child(1) {
+  margin-left: 0rem;
+  animation: jumbotronnavAnimate 1s; 
+  animation-delay: 3.5s;
+  animation-fill-mode: backwards;
+}
+
+.jumbotron-nav li:nth-child(2) {
+  margin-left: 1rem;
+  animation: jumbotronnavAnimate 1s; 
+  animation-delay: 3.65s;
+  animation-fill-mode: backwards;
+}
+
+.jumbotron-nav li:nth-child(3) {
+  margin-left: 1.5rem;
+  animation: jumbotronnavAnimate 1s; 
+  animation-delay: 3.75s;
+  animation-fill-mode: backwards;
+}
+
+.jumbotron-nav li:nth-child(4) {
+  margin-left: 1rem;
+  animation: jumbotronnavAnimate 1s; 
+  animation-delay: 3.85s;
+  animation-fill-mode: backwards;
+}
+
+.jumbotron-nav li:nth-child(5) {
+  margin-left: 0rem;
+  animation: jumbotronnavAnimate 1s; 
+  animation-delay: 3.95s;
+  animation-fill-mode: backwards;
+}
+
+/* DELETE AS NECESSARY */
+
+.flex-auto {
+  flex: 0 0 auto;
+}
+
+.h-250 { height: 250px; }
+@media (min-width: 768px) {
+  .h-md-250 { height: 250px; }
+}
+
+/* Pagination */
+.blog-pagination {
+  margin-bottom: 4rem;
+}
+
+/*
+ * Blog posts
+ */
+.blog-post {
+  margin-bottom: 4rem;
+}
+.blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #727272;
+}
+
+
+footer h1 {
+	font-size: 3rem;
+}
+
+
+
+
+
+
