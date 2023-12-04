@@ -11,6 +11,7 @@
   3.2.1... Floating globe
   3.2.2... Lab title
   3.2.3... Jumbotron nav
+  3.3..... Buttons
 4......... Page-specific
   4.1..... Events
 
@@ -33,6 +34,9 @@
 		--evergreen: #175041;
 		--viridian-attempt-1: #104c44;
 		--viridian-attempt-2: #123938;
+    --glass-white: rgba(255, 255, 255, 0.2);
+    --glass-white-border: 1px solid rgba(255, 255, 255, 0.1);
+    --glass-white-text: rgba(255, 255, 255, 0.7);
   }
 
 /* 2. Base */
@@ -52,9 +56,10 @@ body {
 .side-panel {
   width: 100vw;
   height: 4.5rem;
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--glass-white);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  z-index: 9999;
 }
 
 .side-panel .nav-item {
@@ -65,6 +70,7 @@ body {
 
 .side-panel .nav-link {
   padding: 0.2rem;
+  transition: all 0.35s ease-in-out;
 }
 
 .side-panel a, .side-panel .btn-empty {
@@ -83,8 +89,8 @@ body {
   	right: 0rem;
   	width: 4.5rem;
   	height: 100vh;
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
-    transition: width 0.5s ease-in-out;
+    border-left: var(--glass-white-border);
+    transition: width 0.35s ease-in-out;
   }
 
   .side-panel .nav {
@@ -101,7 +107,7 @@ body {
     visibility: hidden;
     opacity: 0;
     right: -1.5rem;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.35s ease-in-out;
   }
 
   .side-panel:hover .side-panel-text {
@@ -113,8 +119,6 @@ body {
   .side-panel .nav-link {
     padding: 1rem;
   }
-
-
 
   .side-panel .dropstart {
   	display: flex;
@@ -289,6 +293,42 @@ body {
     rgba(0,0,0,0.2) 0 10px 0px;
 }
 
+p.page-header {
+  font-family: "Panton", sans-serif;
+  color: hsla(0,0%,0%,0);
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  transform: rotate(-2deg) rotateX(30deg) skewX(1deg);
+  text-shadow: 
+    #fff 0 0px 1px, 
+    #ddd 0 1px 1px, 
+    #ccc 0 3px 2px,
+    #bbb 0 5px 2px, 
+    rgba(0,0,0,0.2) 0 0px 0px, 
+    rgba(0,0,0,0.1) 0 5px 0px,
+    rgba(0,0,0,0.2) 0 10px 0px; 
+}
+
+h1.page-title {
+  font-family: "Panton", sans-serif;
+  color: hsla(0,0%,0%,0);
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  transform: rotate(2deg) rotateX(30deg) skewX(1deg);
+  text-shadow: 
+    #fff 0 0px 1px, 
+    #ddd 0 1px 1px, 
+    #ccc 0 3px 2px,
+    #bbb 0 5px 2px, 
+    rgba(0,0,0,0.2) 0 0px 0px, 
+    rgba(0,0,0,0.1) 0 5px 0px,
+    rgba(0,0,0,0.2) 0 10px 0px;
+}
+
 #lab-title .the {
   animation: labtitleAnimate 1s; 
   animation-delay: 1.2s;
@@ -399,6 +439,26 @@ body {
   animation-delay: 1.9s;
   animation-fill-mode: backwards;
 }
+
+/* 3.3 Buttons */
+
+.btn-outline-primary {
+  --bs-btn-color: var(--glass-white-text);
+  --bs-btn-border-color: var(--glass-white);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--glass-white);
+  --bs-btn-hover-border-color: var(--glass-white-border);
+  --bs-btn-focus-shadow-rgb: 13, 110, 253;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--glass-white-border);
+  --bs-btn-active-border-color: var(--glass-white);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #0d6efd;
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: #0d6efd;
+}
+
+
 
 /* DELETE AS NECESSARY */
 
