@@ -1,169 +1,186 @@
 <!doctype html>
 <html lang="en" data-bs-theme="dark">
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="Joaquim Baeta">
     <title>People | Laboratory of Ecology and Conservation</title>
     
+    <!-- CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
 
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/custom.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Amatic+SC&family=Babylonica&family=Comfortaa:wght@400;700&family=Elsie+Swash+Caps&family=Fugaz+One&family=Gabarito:wght@300;400&family=Glory&family=Grape+Nuts&family=Great+Vibes&family=Ingrid+Darling&family=K2D&family=Kenia&family=Literata:opsz@7..72&family=Manjari&family=Marck+Script&family=Neonderthaw&family=Offside&family=Ruge+Boogie&family=Sarabun&family=Satisfy&family=Send+Flowers&family=Spirax&family=Splash&family=Sriracha&family=Updock&display=swap" rel="stylesheet">
 
-<!-- Fonts -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Inline+One&family=Amatic+SC&family=Babylonica&family=Comfortaa:wght@400;700&family=Elsie+Swash+Caps&family=Fugaz+One&family=Gabarito:wght@300;400&family=Glory&family=Grape+Nuts&family=Great+Vibes&family=Ingrid+Darling&family=K2D&family=Kenia&family=Literata:opsz@7..72&family=Manjari&family=Marck+Script&family=Neonderthaw&family=Offside&family=Ruge+Boogie&family=Sarabun&family=Satisfy&family=Send+Flowers&family=Spirax&family=Splash&family=Sriracha&family=Updock&display=swap" rel="stylesheet">
-
-<!-- Icons -->
-<link href="fonts/fontawesome/css/all.css" rel="stylesheet">
-
-
-
+    <!-- Icons -->
+    <link href="fonts/fontawesome/css/all.css" rel="stylesheet">
   </head>
   <body>
-    
-
-<div class="container-fluid p-0">
-<!-- sidebar -->
-  <nav class="side-panel d-flex flex-column justify-content-between flex-shrink-0">
-    <ul class="nav flex-column text-center">
-      <li class="nav-item">
-        <a href="#" class="nav-link py-3" aria-current="page" title="Home">
-          <i class="fa-solid fa-otter fa-fw fa-xl"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link py-3" title="">
-          <i class="fa-solid fa-id-badge fa-fw fa-xl"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link py-3" title="">
-          <i class="fa-solid fa-graduation-cap fa-fw fa-xl"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link py-3" title="">
-          <i class="fa-solid fa-seedling fa-fw fa-xl"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a href="#" class="nav-link py-3" title="">
-          <i class="fa-solid fa-location-dot fa-fw fa-xl"></i>
-        </a>
-      </li>
-    </ul>
-    <ul class="nav flex-column text-center">
-      <li class="nav-item dropdown dropstart">
-        <a class="nav-link py-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          <i class="fa-solid fa-language fa-fw fa-xl"></i>
-        </a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Action</a></li>
-          <li><a class="dropdown-item" href="#">Another action</a></li>
+    <div class="container-fluid p-0">
+      <!-- Sidebar -->
+      <nav class="side-panel d-flex justify-content-between flex-shrink-0 py-2">
+        <ul class="nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link py-3" aria-current="page" title="Home">
+              <span class="side-panel-text ps-2">Home</span><i class="fa-solid fa-house fa-fw fa-xl"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link py-3" title="People">
+              <span class="side-panel-text ps-2">People</span><i class="fa-solid fa-id-badge fa-fw fa-xl"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link py-3" title="Students">
+              <span class="side-panel-text ps-2">Students</span><i class="fa-solid fa-graduation-cap fa-fw fa-xl"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link py-3" title="Blog">
+              <span class="side-panel-text ps-2">Blog</span><i class="fa-solid fa-newspaper fa-fw fa-xl"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="events.html" class="nav-link py-3" title="Events">
+              <span class="side-panel-text ps-2">Events</span><i class="fa-solid fa-calendar-check fa-fw fa-xl"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link py-3" title="Services">
+              <span class="side-panel-text ps-2">Services</span><i class="fa-solid fa-person-hiking fa-fw fa-xl"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link py-3" title="About us">
+              <span class="side-panel-text ps-2">About us</span><i class="fa-solid fa-tree-city fa-fw fa-xl"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link py-3" title="Visit us">
+              <span class="side-panel-text ps-2">Visit us</span><i class="fa-solid fa-location-dot fa-fw fa-xl"></i>
+            </a>
+          </li>
         </ul>
-      </li>
-    </ul>
-  </nav>
-</div>
+        <ul class="nav">
+          <li class="nav-item dropdown dropstart">
+            <a class="nav-link py-3" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fa-solid fa-language fa-fw fa-xl"></i>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
 
-<div class="container ps-4 pe-5">
-  <div class="row py-5">
-    <div class="col-12">
-      <h1 class="text-center py-5">People</h1>
-
-      <div class="row gx-5 mb-5"> <!-- Siti Nurleily Marliana -->
-        <div class="col-sm-2">
-          <img src="img/staff/lelly.webp" class="img-fluid">
-        </div>
-        <div class="col-sm-10">
-          <h2>Siti Nurleily Marliana, Ph.D.</h2>
-
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-
-          <p>
-            <a href="https://allisfoundintime.com"><i class="fa-brands fa-firefox"></i> Personal website</a> <br>
-            <a href="https://twitter.com/LellyBaeta"><i class="fa-brands fa-square-x-twitter"></i> @Lelly Baeta</a>
+    <header class="container-fluid" style="background: url('img/people/people.webp'); background-size: cover; background-position: bottom;">
+      <div class="row pb-5">
+        <div class="col-12 px-md-5">
+          <p class="page-header display-4 py-0">Laboratory of Ecology and Conservation</p>
+          <h1 class="page-title pb-5">People</h1>
         </div>
       </div>
+    </header>
 
-      <div class="row gx-5 mb-5"> <!-- Suwarno Hadisusanto -->
-        <div class="col-sm-2">
-          <img src="img/staff/placeholder-1.webp" class="img-fluid">
-        </div>
-        <div class="col-sm-10">
-          <h2>Prof. Dr. Suwarno Hadisusanto, S.U.</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    <div class="container mt-5 ps-4 pe-5">
+      <div class="row py-5">
+        <div class="col-12 col-md-11 col-lg-10 offset-lg-1">
 
-          <p><a href="https://allisfoundintime.com"><i class="fa-brands fa-firefox"></i> Personal website</a>
-        </div>
-      </div>
+          <div class="row gx-5 mb-5"> <!-- Akbar Reza -->
+            <div class="col-sm-2">
+              <img src="img/people/placeholder-5.webp" class="img-fluid">
+            </div>
+            <div class="col-sm-10">
+              <h2>Akbar Reza, S.Si., M.Sc</h2>
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> -->
 
-      <div class="row gx-5 mb-5"> <!-- Tjut Sugandawaty Djohan -->
-        <div class="col-sm-2">
-          <img src="img/staff/placeholder-2.webp" class="img-fluid">
-        </div>
-        <div class="col-sm-10">
-          <h2>Prof. Dr. Tjut Sugandawaty Djohan, M.Sc.</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <!-- <p><a href="https://allisfoundintime.com"><i class="fa-brands fa-firefox"></i> Personal website</a> -->
+            </div>
+          </div>
 
-          <p><a href="https://allisfoundintime.com"><i class="fa-brands fa-firefox"></i> Personal website</a>
-        </div>
-      </div>
+          <div class="row gx-5 mb-5"> <!-- Andhika Puspito Nugroho -->
+            <div class="col-sm-2">
+              <img src="img/people/placeholder-3.webp" class="img-fluid">
+            </div>
+            <div class="col-sm-10">
+              <h2>Dr.rer.nat. Andhika Puspito Nugroho, S.Si., M.Si.</h2>
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> -->
 
-      <div class="row gx-5 mb-5"> <!-- Andhika Puspito Nugroho -->
-        <div class="col-sm-2">
-          <img src="img/staff/placeholder-3.webp" class="img-fluid">
-        </div>
-        <div class="col-sm-10">
-          <h2>Dr.rer.nat. Andhika Puspito Nugroho, S.Si., M.Si.</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <!-- <p><a href="https://allisfoundintime.com"><i class="fa-brands fa-firefox"></i> Personal website</a> -->
+            </div>
+          </div>
 
-          <p><a href="https://allisfoundintime.com"><i class="fa-brands fa-firefox"></i> Personal website</a>
-        </div>
-      </div>
+          <div class="row gx-5 mb-5"> <!-- Mukhlish Jamal Musa Holle -->
+            <div class="col-sm-2">
+              <img src="img/people/placeholder-4.webp" class="img-fluid">
+            </div>
+            <div class="col-sm-10">
+              <h2>Mukhlish Jamal Musa Holle, S.Si., M.Env.Sc.</h2>
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> -->
 
-      <div class="row gx-5 mb-5"> <!-- Mukhlish Jamal Musa Holle -->
-        <div class="col-sm-2">
-          <img src="img/staff/placeholder-4.webp" class="img-fluid">
-        </div>
-        <div class="col-sm-10">
-          <h2>Mukhlish Jamal Musa Holle, S.Si., M.Env.Sc.</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <!-- <p><a href="https://allisfoundintime.com"><i class="fa-brands fa-firefox"></i> Personal website</a> -->
+            </div>
+          </div>
 
-          <p><a href="https://allisfoundintime.com"><i class="fa-brands fa-firefox"></i> Personal website</a>
-        </div>
-      </div>
+          <div class="row gx-5 mb-5"> <!-- Siti Nurleily Marliana -->
+            <div class="col-sm-2">
+              <img src="img/people/lelly.webp" class="img-fluid">
+            </div>
+            <div class="col-sm-10">
+              <h2>Siti Nurleily Marliana, Ph.D.</h2>
 
-      <div class="row gx-5 mb-5"> <!-- Akbar Reza -->
-        <div class="col-sm-2">
-          <img src="img/staff/placeholder-5.webp" class="img-fluid">
-        </div>
-        <div class="col-sm-10">
-          <h2>Akbar Reza, S.Si., M.Sc</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+              <p>Current head of the lab.</p>
 
-          <p><a href="https://allisfoundintime.com"><i class="fa-brands fa-firefox"></i> Personal website</a>
-        </div>
-      </div>
+              <p>
+                <a href="https://allisfoundintime.com"><i class="fa-brands fa-firefox"></i> Personal website</a> <br>
+                <a href="https://twitter.com/LellyBaeta"><i class="fa-brands fa-square-x-twitter"></i> @Lelly Baeta</a>
+            </div>
+          </div>
 
-      <div class="row gx-5 mb-5"> <!-- Tukijan -->
-        <div class="col-sm-2">
-          <img src="img/staff/placeholder-6.webp" class="img-fluid">
-        </div>
-        <div class="col-sm-10">
-          <h2>Tukijan</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+          <div class="row gx-5 mb-5"> <!-- Suwarno Hadisusanto -->
+            <div class="col-sm-2">
+              <img src="img/people/suwarno.webp" class="img-fluid">
+            </div>
+            <div class="col-sm-10">
+              <h2>Prof. Dr. Suwarno Hadisusanto, S.U.</h2>
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> -->
 
-          <p><a href="https://allisfoundintime.com"><i class="fa-brands fa-firefox"></i> Personal website</a>
+              <!-- <p><a href="https://allisfoundintime.com"><i class="fa-brands fa-firefox"></i> Personal website</a> -->
+            </div>
+          </div>
+
+<!--           <div class="row gx-5 mb-5"> Tjut Sugandawaty Djohan
+            <div class="col-sm-2">
+              <img src="img/people/placeholder-2.webp" class="img-fluid">
+            </div>
+            <div class="col-sm-10">
+              <h2>Prof. Dr. Tjut Sugandawaty Djohan, M.Sc.</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+
+              <p><a href="https://allisfoundintime.com"><i class="fa-brands fa-firefox"></i> Personal website</a>
+            </div>
+          </div> -->
+
+          <div class="row gx-5 mb-5"> <!-- Tukijan -->
+            <div class="col-sm-2">
+              <img src="img/people/placeholder-6.webp" class="img-fluid">
+            </div>
+            <div class="col-sm-10">
+              <h2>Tukijan</h2>
+              <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> -->
+
+              <!-- <p><a href="https://allisfoundintime.com"><i class="fa-brands fa-firefox"></i> Personal website</a> -->
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
 <footer class="py-5 text-center text-body-secondary bg-body-tertiary">
     <a href="#">Back to top</a>
