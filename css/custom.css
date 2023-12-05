@@ -12,6 +12,7 @@
   3.2.2... Lab title
   3.2.3... Jumbotron nav
   3.3..... Buttons
+  3.4..... Modal
 4......... Page-specific
   4.1..... Events
 
@@ -458,7 +459,35 @@ h1.page-title {
   --bs-btn-disabled-border-color: #0d6efd;
 }
 
+/* 3.4 Modals */
 
+.modal {
+  
+  
+  --bs-modal-color: ;
+  --bs-modal-bg: var(--glass-white);
+  --bs-modal-border-color: var(--glass-white-border);
+  
+
+
+  --bs-modal-border-radius: var(--bs-border-radius-lg);
+  --bs-modal-box-shadow: var(--bs-box-shadow-sm);
+  --bs-modal-inner-border-radius: calc(var(--bs-border-radius-lg) - (var(--bs-border-width)));
+  --bs-modal-header-padding-x: 1rem;
+  --bs-modal-header-padding-y: 1rem;
+  --bs-modal-header-padding: 1rem 1rem;
+  --bs-modal-header-border-color: var(--bs-border-color);
+  --bs-modal-header-border-width: var(--bs-border-width);
+  --bs-modal-title-line-height: 1.5;
+  --bs-modal-footer-gap: 0.5rem;
+  --bs-modal-footer-bg: ;
+  --bs-modal-footer-border-color: var(--bs-border-color);
+  --bs-modal-footer-border-width: var(--bs-border-width);
+}
+
+.modal-content {
+  backdrop-filter: blur(10px);
+}
 
 /* DELETE AS NECESSARY */
 
