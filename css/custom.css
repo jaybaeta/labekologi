@@ -256,6 +256,15 @@ body {
   text-align: center;
 }
 
+.floating-globe-2 {
+  float: left;
+  shape-outside: circle(50%);
+  width: 90vh;
+  height: auto;
+  margin-left: 15vw;
+/*  margin-right: 8vw;*/
+}
+
 /* 3.2.2 Lab title */
 
 @keyframes labtitleAnimate {
@@ -269,15 +278,16 @@ body {
   }
 }
 
-
 #lab-title {
-  position: relative;
+  position: absolute;
   text-align: center;
   font-family: "Panton", sans-serif;
+  width: 39vw;
+  z-index: 9999;
 }
 
 #lab-title p {
-  font-size: 4em;
+  font-size: 2em;
   margin: 0;
   color: hsla(0,0%,0%,0);
   text-transform: uppercase;
@@ -292,6 +302,12 @@ body {
     rgba(0,0,0,0.2) 0 0px 0px, 
     rgba(0,0,0,0.1) 0 5px 0px,
     rgba(0,0,0,0.2) 0 10px 0px;
+}
+
+@media (min-width: 992px) {
+  #lab-title p {
+    font-size: 4rem;
+  }
 }
 
 p.page-header {
@@ -366,14 +382,26 @@ h1.page-title {
   animation-fill-mode: backwards;
 }
 
-/* 3.2.3 Jumbotron nav */
-
-.jumbotron-nav {
-  z-index: 999;
+#lab-title .construction {
+  animation: labtitleAnimate 1s; 
+  animation-delay: 1.7s;
+  animation-fill-mode: backwards;
+  color: #d02c2cd4;
 }
 
-.jumbotron-nav ul {
+/* 3.2.3 Jumbotron nav */
+
+/*.jumbotron-nav {
+  
+}*/
+
+@media (max-width: ) {
+
+}
+
+ul.jumbotron-nav {
   list-style: none;
+  z-index: 9999;
 }
 
 .jumbotron-nav a {
