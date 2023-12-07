@@ -176,56 +176,10 @@ body {
 
 /* 3.2 Jumbotron */
 
-.jumbotron {
-  background-color: var(--evergreen);
-  border-radius: 0;
-  margin-bottom: 0;
+.index-jumbotron {
+  display: flex;
+  align-items: center;
   height: 100vh;
-}
-
-.jumbotron h1 {
-  font-size: 7rem !important;
-  font-weight: 400;
-  letter-spacing: 2px;
-	text-shadow: 5px 5px 5px var(--infinity);
-}
-
-.jumbotron h1, footer h1 {
-	/*font-family: 'Amatic SC' !important;*/
-	/*font-family: 'Kenia' !important;*/
-	/*font-family: 'Fugaz One' !important;*/
-	/*font-family: 'Offside' !important;*/
-	/*font-family: 'Elsie Swash Caps' !important;*/
-	font-family: 'Spirax' !important;
-}
-
-@media (max-width: 991px) {
-  .jumbotron {
-    height: 50vh;
-  }
-
-  .jumbotron h1 {
-    font-size: 4rem !important;
-  }
-}
-
-@media (max-width: 767px) {
-  .jumbotron h1 {
-    font-size: 2.7rem !important;
-  }
-}
-
-@media (max-width: 433px) {
-  .jumbotron h1 {
-    font-size: 2.4rem !important;
-  }
-}
-
-@media (max-width: 575px) {
-  .jumbotron h3 {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
 }
 
 /* 3.2.1 Floating globe */
@@ -259,10 +213,16 @@ body {
 .floating-globe-2 {
   float: left;
   shape-outside: circle(50%);
-  width: 90vh;
+  width: 55vw;
   height: auto;
   margin-left: 15vw;
 /*  margin-right: 8vw;*/
+}
+
+@media (max-width: 1199px) {
+  .floating-globe-2 {
+    width: 50vw;
+  }
 }
 
 /* 3.2.2 Lab title */
@@ -401,6 +361,7 @@ h1.page-title {
 
 ul.jumbotron-nav {
   list-style: none;
+  padding-left: 0;
   z-index: 9999;
 }
 
