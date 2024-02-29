@@ -36,6 +36,7 @@ The Laboratory of Ecology and Conservation, Universitas Gadjah Mada
 		--viridian-attempt-1: #104c44;
 		--viridian-attempt-2: #123938;
     --glass-white: rgba(255, 255, 255, 0.2);
+/*    --glass-white: rgba(127, 230, 150, 0.15);*/
     --glass-white-border: 1px solid rgba(255, 255, 255, 0.1);
     --glass-white-text: rgba(255, 255, 255, 0.7);
   }
@@ -247,10 +248,12 @@ body {
 
 #lab-title {
   position: absolute;
-  font-family: "Panton", sans-serif;
+  font-family: "Gabarito", sans-serif;
+/*  font-family: "Panton", sans-serif;*/
+/*  font-family: "Paytone One", sans-serif;*/
+  font-weight: 900;
   width: 80vw;
   z-index: 9999;
-
 }
 
 #lab-title p {
@@ -292,7 +295,10 @@ body {
 }
 
 p.page-header {
-  font-family: "Panton", sans-serif;
+  font-family: "Gabarito", sans-serif;
+/*  font-family: "Panton", sans-serif;*/
+/*  font-family: "Paytone One", sans-serif;*/
+  font-weight: 900;
   color: hsla(0,0%,0%,0);
   text-transform: uppercase;
   text-align: center;
@@ -310,7 +316,10 @@ p.page-header {
 }
 
 h1.page-title {
-  font-family: "Panton", sans-serif;
+  font-family: "Gabarito", sans-serif;
+/*  font-family: "Panton", sans-serif;*/
+/*  font-family: "Paytone One", sans-serif;*/
+  font-weight: 900;
   color: hsla(0,0%,0%,0);
   text-transform: uppercase;
   text-align: center;
