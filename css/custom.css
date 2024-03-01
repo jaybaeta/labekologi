@@ -15,6 +15,7 @@ The Laboratory of Ecology and Conservation, Universitas Gadjah Mada
   3.2.3... Jumbotron nav
   3.3..... Buttons
   3.4..... Modal
+  3.5..... Links
 4......... Page-specific
   4.1..... Events
 
@@ -50,6 +51,15 @@ body {
 	font-family: 'Manjari' !important;
 	/*font-family: 'Sarabun' !important;*/
 }
+
+/*a {
+  color: var(--bs-body-color);
+  text-decoration-style: wavy;
+  text-decoration-thickness: 1px;
+  text-decoration-color: #258a5b;
+  text-underline-offset: 3px;
+}
+*/
 
 /* 3. Elements */
 
@@ -216,8 +226,6 @@ body {
   shape-outside: circle(50%);
   width: 100vw;
   height: auto;
-  
-/*  margin-right: 8vw;*/
 }
 
 @media (min-width: 992px) {
@@ -536,7 +544,50 @@ footer h1 {
 	font-size: 3rem;
 }
 
+/* 3.5 Links */
 
+
+p a {
+  color: var(--bs-body-color);
+  padding-bottom: 6px;
+  background: url('../img/design/wave.svg');
+  background-repeat: repeat;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-size: auto auto;
+  background-repeat: repeat-x;
+  background-size: 9px 5px; 
+  background-position: 2px 19px;
+  animation: move 8s linear infinite;
+  -webkit-animation: move 8s linear infinite;
+  animation-play-state: paused;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+  text-decoration-skip: objects;
+}
+
+p a:hover {
+  animation-play-state: running;
+}
+
+@-webkit-keyframes move {
+from {
+    background-position: 2px 15px;
+  }
+  to {
+    background-position: 500px 15px;
+  }
+}
+
+@keyframe move {
+from {
+    background-position: 2px 15px;
+  }
+  to {
+    background-position: 500px 15px;
+  }
+}
 
 /* 4. Page-specific */
 
