@@ -3,21 +3,22 @@
 The Laboratory of Ecology and Conservation, Universitas Gadjah Mada
 
 (c) Joaquim Baeta
-  for the Laboratory of Ecology and Conservation, Universitas Gadjah
+  for the Laboratory of Ecology and Conservation, Universitas Gadjah Mada
 
 1......... Root
 2......... Base
-3......... Elements
-  3.1..... Side panel
-  3.2..... Jumbotron
-  3.2.1... Floating globe
-  3.2.2... Lab title
-  3.2.3... Jumbotron nav
-  3.3..... Buttons
-  3.4..... Modal
-  3.5..... Links
-4......... Page-specific
-  4.1..... Events
+3......... Typography
+4......... Elements
+  4.1..... Side panel
+  4.2..... Jumbotron
+  4.2.1... Floating globe
+  4.2.2... Lab title
+  4.2.3... Jumbotron nav
+  4.3..... Buttons
+  4.4..... Modal
+  4.5..... Footer
+5......... Page-specific
+  5.1..... Events
 
 //*/
 
@@ -46,24 +47,69 @@ The Laboratory of Ecology and Conservation, Universitas Gadjah Mada
 
 body {
 	background-color: var(--evergreen);
-	/*font-family: 'Gabarito' !important;*/
-	/*font-family: 'K2D' !important;*/
 	font-family: 'Manjari' !important;
-	/*font-family: 'Sarabun' !important;*/
 }
 
-/*a {
+/* 3. Typography */
+
+p a {
   color: var(--bs-body-color);
-  text-decoration-style: wavy;
-  text-decoration-thickness: 1px;
-  text-decoration-color: #258a5b;
-  text-underline-offset: 3px;
+  padding-bottom: 6px;
+  background: url('../img/design/wave.svg');
+  background-repeat: repeat;
+  background-position-x: 0%;
+  background-position-y: 0%;
+  background-repeat: repeat-x;
+  background-size: 9px 5px; 
+  background-position: 2px 19px;
+  animation: move 8s linear infinite;
+  -webkit-animation: move 8s linear infinite;
+  animation-play-state: paused;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+  text-decoration-skip: objects;
 }
-*/
 
-/* 3. Elements */
+p a:hover {
+  animation-play-state: running;
+}
 
-/* 3.1 Side panel  */
+@keyframes move {
+from {
+    background-position: 2px 15px;
+  }
+  to {
+    background-position: 500px 15px;
+  }
+}
+
+h2.heading {
+  font-family: "Gabarito", sans-serif;
+  font-weight: 900;
+  font-size: 3rem;
+  color: hsla(0,0%,0%,0);
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  text-shadow: 
+    #fff 0 0px 1px, 
+    #ddd 0 1px 1px, 
+    #ccc 0 3px 2px,
+    #bbb 0 5px 2px, 
+    rgba(0,0,0,0.2) 0 0px 0px, 
+    rgba(0,0,0,0.1) 0 5px 0px,
+    rgba(0,0,0,0.2) 0 10px 0px;
+}
+
+.rotate-2deg {
+  transform: rotate(2deg) rotateX(30deg) skewX(1deg);
+}
+
+/* 4. Elements */
+
+/* 4.1 Side panel  */
 
 .side-panel {
   width: 100vw;
@@ -185,7 +231,7 @@ body {
   }
 }
 
-/* 3.2 Jumbotron */
+/* 4.2 Jumbotron */
 
 .index-jumbotron {
   display: flex;
@@ -193,7 +239,7 @@ body {
   height: 100vh;
 }
 
-/* 3.2.1 Floating globe */
+/* 4.2.1 Floating globe */
 
 @keyframes globe {
   0% {
@@ -241,7 +287,7 @@ body {
   }
 }
 
-/* 3.2.2 Lab title */
+/* 4.2.2 Lab title */
 
 @keyframes labtitleAnimate {
   from {
@@ -290,11 +336,11 @@ body {
   }
 }
 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
   #lab-title p {
     
   }
-}
+}*/
 
 @media (min-width: 992px) {
   #lab-title p {
@@ -387,7 +433,7 @@ h1.page-title {
   color: #d02c2cf4;
 }
 
-/* 3.2.3 Jumbotron nav */
+/* 4.2.3 Jumbotron nav */
 
 ul.jumbotron-nav {
   display: none;
@@ -395,7 +441,8 @@ ul.jumbotron-nav {
 
 @media (min-width: 992px) {
   ul.jumbotron-nav {
-  display: block;
+    display: block;
+  }
 }
 
 ul.jumbotron-nav {
@@ -469,7 +516,7 @@ ul.jumbotron-nav {
   animation-fill-mode: backwards;
 }
 
-/* 3.3 Buttons */
+/* 4.3 Buttons */
 
 .btn-outline-primary {
   --bs-btn-color: var(--glass-white-text);
@@ -487,7 +534,7 @@ ul.jumbotron-nav {
   --bs-btn-disabled-border-color: #0d6efd;
 }
 
-/* 3.4 Modals */
+/* 4.4 Modals */
 
 .modal {
   --bs-modal-color: ;
@@ -512,86 +559,19 @@ ul.jumbotron-nav {
   backdrop-filter: blur(10px);
 }
 
-/* DELETE AS NECESSARY */
+/* 4.5 Footer */
 
-.flex-auto {
-  flex: 0 0 auto;
+footer {
+  background: #00000026;
 }
-
-.h-250 { height: 250px; }
-@media (min-width: 768px) {
-  .h-md-250 { height: 250px; }
-}
-
-/* Pagination */
-.blog-pagination {
-  margin-bottom: 4rem;
-}
-
-/*
- * Blog posts
- */
-.blog-post {
-  margin-bottom: 4rem;
-}
-.blog-post-meta {
-  margin-bottom: 1.25rem;
-  color: #727272;
-}
-
 
 footer h1 {
 	font-size: 3rem;
 }
 
-/* 3.5 Links */
+/* 5. Page-specific */
 
-
-p a {
-  color: var(--bs-body-color);
-  padding-bottom: 6px;
-  background: url('../img/design/wave.svg');
-  background-repeat: repeat;
-  background-position-x: 0%;
-  background-position-y: 0%;
-  background-size: auto auto;
-  background-repeat: repeat-x;
-  background-size: 9px 5px; 
-  background-position: 2px 19px;
-  animation: move 8s linear infinite;
-  -webkit-animation: move 8s linear infinite;
-  animation-play-state: paused;
-  text-decoration: none;
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects;
-  text-decoration-skip: objects;
-}
-
-p a:hover {
-  animation-play-state: running;
-}
-
-@-webkit-keyframes move {
-from {
-    background-position: 2px 15px;
-  }
-  to {
-    background-position: 500px 15px;
-  }
-}
-
-@keyframe move {
-from {
-    background-position: 2px 15px;
-  }
-  to {
-    background-position: 500px 15px;
-  }
-}
-
-/* 4. Page-specific */
-
-/* 4.1 Events */
+/* 5.1 Events */
 
 .event-date {
   background-color: #124236;
