@@ -25,18 +25,14 @@ The Laboratory of Ecology and Conservation, Universitas Gadjah Mada
 /* 1. Root */
 
   :root {
-    --recycled-green: #032b2b;
 		--kiss-a-frog: #b8c78a;
+    --last-of-lettuce: #a1da5d;
 		--ferntastic: #75aa5e;
 		--autumn-crocodile: #488051;
 		--ethereal-woods: #365c4d;
 		--emerald-forest: #284041;
 		--dark-teal: #173b40;
-		--black-pearl: #1b272c;
-		--jedi-night: #0e211c;
 		--evergreen: #175041;
-		--viridian-attempt-1: #104c44;
-		--viridian-attempt-2: #123938;
     --glass-white: rgba(255, 255, 255, 0.2);
 /*    --glass-white: rgba(127, 230, 150, 0.15);*/
     --glass-white-border: 1px solid rgba(255, 255, 255, 0.1);
@@ -56,14 +52,13 @@ p a {
   color: var(--bs-body-color);
   padding-bottom: 6px;
   background: url('../img/design/wave.svg');
-  background-repeat: repeat;
   background-position-x: 0%;
   background-position-y: 0%;
   background-repeat: repeat-x;
   background-size: 9px 5px; 
   background-position: 2px 19px;
   animation: move 8s linear infinite;
-  -webkit-animation: move 8s linear infinite;
+  -webkit-animation: move 14s linear infinite;
   animation-play-state: paused;
   text-decoration: none;
   background-color: transparent;
@@ -72,7 +67,10 @@ p a {
 }
 
 p a:hover {
+  background: url('../img/design/wave_hover.svg');
   animation-play-state: running;
+  background-repeat: repeat-x;
+  background-size: 9px 5px;
 }
 
 @keyframes move {
@@ -133,6 +131,10 @@ h2.heading {
 
 .side-panel a, .side-panel .btn-empty {
   color: #fff;
+}
+
+.side-panel a:hover {
+  color: var(--last-of-lettuce);
 }
 
 .side-panel-text {
