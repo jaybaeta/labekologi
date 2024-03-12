@@ -33,7 +33,7 @@ The Laboratory of Ecology and Conservation, Universitas Gadjah Mada
 		--emerald-forest: #284041;
 		--dark-teal: #173b40;
 		--evergreen: #175041;
-    --glass-white: rgba(255, 255, 255, 0.2);
+    --glass-white: rgba(255, 255, 255, 0.15);
 /*    --glass-white: rgba(127, 230, 150, 0.15);*/
     --glass-white-border: 1px solid rgba(255, 255, 255, 0.1);
     --glass-white-text: rgba(255, 255, 255, 0.7);
@@ -105,6 +105,10 @@ h2.heading {
   transform: rotate(2deg) rotateX(30deg) skewX(1deg);
 }
 
+.rotate-neg1deg {
+  transform: rotate(-1deg) rotateX(30deg) skewX(1deg);
+}
+
 /* 4. Elements */
 
 /* 4.1 Side panel  */
@@ -150,7 +154,7 @@ h2.heading {
   	width: 4.5rem;
   	height: 100vh;
     border-left: var(--glass-white-border);
-    transition: width 0.35s ease-in-out;
+    transition: width 0.2s ease-in-out;
   }
 
   .side-panel .nav {
@@ -456,6 +460,26 @@ ul.jumbotron-nav {
 .jumbotron-nav a {
   color: #fff;
   text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.jumbotron-nav a:hover {
+  color: var(--last-of-lettuce);
+}
+
+.jumbotron-nav a i {
+  color: #fff;
+  transition: text-shadow 0.2s ease-in-out;
+}
+
+.jumbotron-nav a:hover i {
+  color: #fff;
+  text-shadow: 
+    #fff 0px 0 1px,
+    #ddd -10px 0 3px,
+    #ccc -20px 0 5px,
+    #bbb 2px 0 7px,
+    rgba(0,0,0,0.5) 0 0 5px
 }
 
 @keyframes jumbotronnavAnimate {
