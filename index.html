@@ -21,184 +21,57 @@
   </head>
   
   <body>
-    <div class="container index-jumbotron">
-      <div id="lab-title">
-        <p><span class="the">The</span> <span class="laboratory">Laboratory</span> <span class="of">of</span> <span class="ecology">Ecology</span> <span class="and">and</span> <span class="conservation">Conservation</span> <span class="construction">website is under construction</span> </p>
-      </div>  
-        
-      <img src="img/bg/bg5.webp" class="img-fluid floating-globe-2">
+    <div class="container-fluid jumbotron-container px-0">
 
-      <ul class="jumbotron-nav">
-        <li class="py-3">
-          <a href="people.html" title="People">
-            <i class="fa-solid fa-people-pulling fa-fw fa-xl me-2"></i> People of the lab
-          </a>
-        </li>
-        <li class="py-3">
-          <a href="students.html" title="Student assistance">
-            <i class="fa-solid fa-graduation-cap fa-fw fa-xl me-2"></i> Student assistance
-          </a>
-        </li>
-        <li class="py-3">
-          <a href="read.html" title="Articles">
-            <i class="fa-solid fa-newspaper fa-fw fa-xl me-2"></i> Articles
-          </a>
-        </li>
-        <li class="py-3">
-          <a href="events.html" title="Events">
-            <i class="fa-solid fa-calendar-check fa-fw fa-xl me-2"></i> Events
-          </a>
-        </li>
-        <li class="py-3">
-          <a href="services.html" title="Services">
-            <i class="fa-solid fa-person-hiking fa-fw fa-xl me-2"></i> Services
-          </a>
-        </li>
-        <li class="py-3">
-          <a href="about.html" title="About the lab">
-            <i class="fa-solid fa-tree-city fa-fw fa-xl me-2"></i> About the lab
-          </a>
-        </li>
-        <li class="py-3">
-          <a href="visit.html" title="Visit the lab">
-            <i class="fa-solid fa-location-dot fa-fw fa-xl me-2"></i> Visit the lab
-          </a>
-        </li>
-      </ul>      
+      <!-- Background -->
+      <img src="img/bg/mountains-1.svg" class="jumbotron-image mountains-1">
+      <img src="img/bg/mountains-2.svg" class="jumbotron-image mountains-2">
+      <img src="img/bg/cloud.svg" class="jumbotron-image cloud">
+      <img src="img/bg/sun.svg" class="jumbotron-image sunrise">
+      
+      <!-- Lab title -->
+      <div class="d-flex  flex-column" style="height: 100vh;">
+        <div id="lab-title" class="mx-auto mb-auto">
+          <p><span class="the">The</span> <span class="laboratory">Laboratory</span> <span class="of">of</span> <span class="ecology">Ecology</span> <span class="and">and</span> <span class="conservation">Conservation</span></p>
+        </div>   
+
+        <!-- Nav -->
+        <ul class="nav jumbotron-nav mx-auto mb-4">
+          <li class="nav-item">
+            <a href="people.html" class="nav-link" title="People">
+              <i class="fa-solid fa-people-pulling fa-xl mb-4"></i><br>People of the lab
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="students.html" class="nav-link" title="Student assistance">
+              <i class="fa-solid fa-graduation-cap fa-xl mb-4"></i><br>Student portal
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="read.html" class="nav-link" title="Articles">
+              <i class="fa-solid fa-newspaper fa-xl mb-4"></i><br>Read &amp; watch
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="events.html" class="nav-link" title="Events">
+              <i class="fa-solid fa-calendar-check fa-xl mb-4"></i><br>Events
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="services.html" class="nav-link" title="Services">
+              <i class="fa-solid fa-person-hiking fa-xl mb-4"></i><br>Services
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link" title="About the lab">
+              <i class="fa-solid fa-tree-city fa-xl mb-4"></i><br>About the lab
+            </a>
+          </li>
+        </ul>      
+      </div>   
     </div>
 
-<script src="js/jquery-3.7.1.min.js"></script>
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/color-thief.min.js"></script>
-<script type="text/javascript">
-  // <![CDATA[
-  var image_array = new Array();
-  image_array[0] = "img/bg/jumbotron-1.webp";
-  image_array[1] = "img/bg/jumbotron-1.webp";
-  image_array[2] = "img/bg/jumbotron-1.webp";
-  image_array[3] = "img/bg/jumbotron-1.webp";
-  image_array[4] = "img/bg/jumbotron-1.webp";
-
-  var rand_path = image_array[Math.floor(Math.random() * image_array.length)];
-
-  $(document).ready(function () {
-    // Set the background image
-    $("#jumbotron-img").css("background", "url(" + rand_path + ") center center no-repeat");
-    $(".jumbotron-img").css("background-size", "contain");
-  });
-  // ]]>
-</script>
-
-<!--   <script>
-    window.addEventListener("scroll", function() {
-      var scrollPosition = window.scrollY;
-      var sidepanel = document.getElementById("sidepanel");
-
-      // Display the sidebar after scrolling 100vh
-      if (scrollPosition >= window.innerHeight) {
-        sidepanel.style.right = "0";
-      } else {
-        sidepanel.style.right = "-4.5rem"; // Hide the sidebar off-screen
-      }
-    });
-  </script> -->
-
-
-
-<!-- 
-  // Function to get the average color of an image
-  function getAverageColor(imagePath, callback) {
-    var img = new Image();
-    img.src = imagePath;
-    img.onload = function () {
-      var canvas = document.createElement("canvas");
-      canvas.width = img.width;
-      canvas.height = img.height;
-      var ctx = canvas.getContext("2d");
-      ctx.drawImage(img, 0, 0, img.width, img.height);
-
-      var imageData = ctx.getImageData(0, 0, img.width, img.height).data;
-      var r = 0;
-      var g = 0;
-      var b = 0;
-
-      for (var i = 0; i < imageData.length; i += 4) {
-        r += imageData[i];
-        g += imageData[i + 1];
-        b += imageData[i + 2];
-      }
-
-      var pixelCount = imageData.length / 4;
-      var avgR = Math.round(r / pixelCount);
-      var avgG = Math.round(g / pixelCount);
-      var avgB = Math.round(b / pixelCount);
-
-      var averageColor = "rgb(" + avgR + "," + avgG + "," + avgB + ")";
-      callback(averageColor);
-    };
-  }
-
-    // Get the average color of the image and set it as the jumbotron background color
-    getAverageColor(rand_path, function (averageColor) {
-      $("#jumbotron").css("background-color", averageColor);
-    }); -->
-
-
-<!-- 
-<script type="text/javascript">
-  // <![CDATA[
-  var image_array = new Array();
-  image_array[0] = "img/bg/example-bg.webp";
-  image_array[1] = "img/bg/example-bg-2.webp";
-  image_array[2] = "img/bg/example-bg-3.webp";
-  image_array[3] = "img/bg/example-bg-2.webp";
-  image_array[4] = "img/bg/example-bg.webp";
-
-  var rand_path = image_array[Math.floor(Math.random() * image_array.length)];
-
-  $(document).ready(function() {
-    // Create a new Image element to load the image
-    var img = new Image();
-    img.src = rand_path;
-
-    // When the image is loaded, extract the dominant color
-    img.onload = function() {
-      var colorThief = new ColorThief();
-      var dominantColor = colorThief.getColor(img);
-
-      // Convert the RGB values to a CSS color string
-      var bgColor = "rgb(" + dominantColor[0] + "," + dominantColor[1] + "," + dominantColor[2] + ")";
-
-      // Set the jumbotron background color
-      $("#jumbotron").css("background", bgColor);
-    }
-
-    $(".jumbotron").css("background-size", "cover");
-    $("#img-footer").css("background", "url(" + rand_path + ") center center no-repeat");
-  });
-  // ]]>
-</script> -->
-
-
-
-   <!--  <script type="text/javascript">
-      // <![CDATA[
-      var image_array = new Array();
-          image_array[0] = "img/bg/example-bg.webp";
-          image_array[1] = "img/bg/example-bg-2.webp";
-          image_array[2] = "img/bg/example-bg-3.webp";
-          image_array[3] = "img/bg/example-bg-2.webp";
-          image_array[4] = "img/bg/example-bg.webp";
-
-      var rand_path = image_array[Math.floor(Math.random() * image_array.length)];
-       
-      $(document).ready(function() {
-          $("#jumbotron").css("background", "url("+rand_path+") center center fixed no-repeat");
-          $(".jumbotron").css("background-size", "cover");
-          $("#img-footer").css("background", "url("+rand_path+") center center no-repeat");
-          });
-      // ]]>
-    </script> -->
-
-    </body>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
