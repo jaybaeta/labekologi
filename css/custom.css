@@ -18,7 +18,8 @@ The Laboratory of Ecology and Conservation, Universitas Gadjah Mada
   4.4..... Modal
   4.5..... Footer
 5......... Page-specific
-  5.1..... Events
+  5.1..... Content
+  5.2..... Events
 
 //*/
 
@@ -47,7 +48,7 @@ body {
 
 /* 3. Typography */
 
-p a {
+p a, h4 a {
   color: var(--bs-body-color);
   padding-bottom: 6px;
   background: url('../img/design/wave.svg');
@@ -65,7 +66,7 @@ p a {
   text-decoration-skip: objects;
 }
 
-p a:hover {
+p a:hover, h4 a:hover {
   background: url('../img/design/wave_hover.svg');
   animation-play-state: running;
   background-repeat: repeat-x;
@@ -79,6 +80,10 @@ from {
   to {
     background-position: 500px 15px;
   }
+}
+
+h4 a, h4 a:hover {
+  background-size: 9px 15px;
 }
 
 h2.heading {
@@ -690,7 +695,13 @@ footer .fa-solid, footer .fa-brands {
 
 /* 5. Page-specific */
 
-/* 5.1 Events */
+/* 5.1. Content */
+
+.content h6 {
+  color: #B8C78A;
+}
+
+/* 5.2 Events */
 
 .event-date {
   background-color: #124236;
