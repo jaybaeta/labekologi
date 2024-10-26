@@ -137,8 +137,8 @@ h2.heading {
   transition: all 0.2s ease-in-out;
 }
 
-.side-panel a, .side-panel .btn-empty, .side-panel a:hover, .side-panel a:active, .side-panel a:visited {
-  color: #fff;
+.side-panel a, .side-panel .btn-empty, .side-panel a:hover, .side-panel a:active, .side-panel a:visited, .side-panel a:visited:hover {
+  color: #fff !important;
 }
 
 .side-panel a i {
