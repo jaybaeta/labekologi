@@ -11,12 +11,14 @@ The Laboratory of Ecology and Conservation, Universitas Gadjah Mada
 4......... Elements
   4.1..... Side panel
   4.2..... Jumbotron
-  4.2.1... Backround
+  4.2.1... Background
   4.2.2... Lab title
   4.2.3... Jumbotron nav
   4.3..... Buttons
   4.4..... Modal
   4.5..... Footer
+  4.6..... Cards
+  4.7..... Alerts
 5......... Page-specific
   5.1..... Content
   5.2..... Events
@@ -26,14 +28,19 @@ The Laboratory of Ecology and Conservation, Universitas Gadjah Mada
 /* 1. Root */
 
   :root {
-		--kiss-a-frog: #b8c78a;
+    --botanical-night: rgba(18, 64, 53, 1);
+		--evergreen: rgba(23, 80, 65, 1);
+    --rousseau-green: rgba(27, 90, 70, 1);
+    --green-paw-paw: rgba(30, 96, 71, 1);
+    --precious-emerald: rgba(35, 108, 77, 1);
+    --cloudy-camouflage: rgba(38, 113, 76, 1);
+    --canadian-pine: rgba(43, 125, 80, 1);
+    --bold-irish: rgba(46, 130, 78, 1);
+    --shamrock-field: rgba(52, 142, 82, 1);
+    --wild-forest: rgba(56, 146, 82, 1);
+    --ferntastic: #75aa5e;
     --last-of-lettuce: #a1da5d;
-		--ferntastic: #75aa5e;
-		--autumn-crocodile: #488051;
-		--ethereal-woods: #365c4d;
-		--emerald-forest: #284041;
-		--dark-teal: #173b40;
-		--evergreen: #175041;
+    --kiss-a-frog: #b8c78a;
     --glass-white: rgba(255, 255, 255, 0.15);
     --glass-white-border: 1px solid rgba(255, 255, 255, 0.1);
     --glass-white-text: rgba(255, 255, 255, 0.7);
@@ -693,9 +700,58 @@ footer .fa-solid, footer .fa-brands {
   color: #2B7D50;
 }
 
+/* 4.6. Cards */
+
+.card {
+  --bs-card-border-width: 2px;
+  --bs-card-border-color: #2B7D50;
+  --bs-card-border-radius: 35px 25px 20px 15px;
+  --bs-card-bg: transparent;
+}
+
+.card-img-bottom {
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 10px;
+  z-index: -999;
+}
+
+.card h5 {
+  font-family: "Gabarito", sans-serif;
+  font-weight: 900;
+  font-size: 1.5rem;
+  color: hsla(0,0%,0%,0);
+  text-shadow: 
+    #dee2e6 0px 0px 1px,
+    #236c4dff 0px 0px 1px,
+/*    #26714cff 0px 2px 1px,*/
+    #236c4dff 0px 3px 1px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  transform: rotate(-1.5deg) rotateX(19deg) skewX(-11deg);
+  margin-bottom: 1rem;
+}
+
+/* 4.7 Alerts */
+
+.alert-primary {
+  --bs-alert-color: var(--kiss-a-frog);
+  --bs-alert-bg: var(--botanical-night);
+  --bs-alert-border-color: transparent;
+  font-size: 1.15rem;
+}
+
+.alert-primary span {
+  color: var(--cloudy-camouflage);
+  background-color: var(--evergreen);  
+  width: 50px;
+  height: 50px;
+}
+
 /* 5. Page-specific */
 
-/* 5.1. Content */
+/* 5.1 Content */
 
 .content h6 {
   color: #B8C78A;
