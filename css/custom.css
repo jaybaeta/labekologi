@@ -757,6 +757,10 @@ footer .fa-solid, footer .fa-brands {
   color: #B8C78A;
 }
 
+.content iframe, .content-thumbnail {
+  border-radius: 15px 25px 15px 30px;
+}
+
 .metadata-author {
   font-size: 1.25rem;
   text-align: center;
