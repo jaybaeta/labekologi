@@ -390,8 +390,6 @@ h2.heading {
 
 p.page-header {
   font-family: "Gabarito", sans-serif;
-/*  font-family: "Panton", sans-serif;*/
-/*  font-family: "Paytone One", sans-serif;*/
   font-weight: 900;
   color: hsla(0,0%,0%,0);
   text-transform: uppercase;
@@ -411,8 +409,6 @@ p.page-header {
 
 h1.page-title {
   font-family: "Gabarito", sans-serif;
-/*  font-family: "Panton", sans-serif;*/
-/*  font-family: "Paytone One", sans-serif;*/
   font-weight: 900;
   color: hsla(0,0%,0%,0);
   text-transform: uppercase;
@@ -731,6 +727,16 @@ footer .fa-solid, footer .fa-brands {
   line-height: 1;
   transform: rotate(-1.5deg) rotateX(19deg) skewX(-11deg);
   margin-bottom: 1rem;
+}
+
+.card-list li i {
+  color: var(--cloudy-camouflage);
+}
+
+.card-list ul {
+  font-size: 1.5rem;
+/*  opacity: 0.7*/
+  color: #98ba7cff;
 }
 
 /* 4.7 Alerts */
