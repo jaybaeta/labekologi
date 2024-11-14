@@ -28,35 +28,46 @@ The Laboratory of Ecology and Conservation, Universitas Gadjah Mada
 /* 1. Root */
 
   :root {
-    --botanical-night: rgba(18, 64, 53, 1);
-		--evergreen: rgba(23, 80, 65, 1);
-    --rousseau-green: rgba(27, 90, 70, 1);
-    --green-paw-paw: rgba(30, 96, 71, 1);
-    --precious-emerald: rgba(35, 108, 77, 1);
-    --cloudy-camouflage: rgba(38, 113, 76, 1);
-    --canadian-pine: rgba(43, 125, 80, 1);
-    --bold-irish: rgba(46, 130, 78, 1);
-    --shamrock-field: rgba(52, 142, 82, 1);
-    --wild-forest: rgba(56, 146, 82, 1);
-    --ferntastic: #75aa5e;
-    --last-of-lettuce: #a1da5d;
-    --kiss-a-frog: #b8c78a;
-    --glass-white: rgba(255, 255, 255, 0.15);
-    --glass-white-border: 1px solid rgba(255, 255, 255, 0.1);
-    --glass-white-text: rgba(255, 255, 255, 0.7);
+    --botanical-night: hsl(163 56 16);
+    --evergreen: hsl(160 51 20);
+    --green-paw-paw: hsl(155 52 25);
+    --cloudy-camouflage: hsl(150 50 30);
+    --amazon: hsl(145 43 33);
+    --bold-irish: hsl(143 48 35);
+    --wild-forest: hsl(137 45 40);
+    --kryptonite-green: hsl(125 34 46);
+    --argula: hsl(109 35 51);
+    --ultra-green: hsl(98 44 55);
+    --fairy-tale-green: hsl(90 56 59);
+    --last-of-lettuce: hsl(86 60 62);
+    --wasabi: hsl(83 57 65);
+    --sage-sensation: hsl(80 52 68);
+    --mermaid-tears: hsl(76 47 71);
+    --april-showers: hsl(71 42 75);
+    --white-asparagus: hsl(69 41 79);
+    --frost: hsl(65 40 83);
+    --slippery-soap: hsl(60 37 88);
+    --raptures-light: hsl(49 42 93);
+    --pale-cucumber: hsl(60 20 78);
+    --sage-splendor: hsl(68 19 70);
+    --great-green: hsl(73 18 63);
+    --glass-light: hsla(49, 42%, 93%, 0.15);
+    --glass-light-border: 1px solid hsla(49, 42%, 93%, 0.1);
+    --glass-light-text: hsla(49, 42%, 93%, 0.7);
   }
 
 /* 2. Base */
 
 body {
+  font-family: 'Manjari', sans-serif !important;
+  color: var(--raptures-light);
 	background-color: var(--evergreen);
-	font-family: 'Manjari' !important;
 }
 
 /* 3. Typography */
 
-p a, h4 a {
-  color: var(--bs-body-color);
+p a, h4 a, .alert a {
+  color: var(--raptures-light);
   padding-bottom: 6px;
   background: url('../img/design/wave.svg');
   background-position-x: 0%;
@@ -73,11 +84,15 @@ p a, h4 a {
   text-decoration-skip: objects;
 }
 
-p a:hover, h4 a:hover {
+p a:hover, h4 a:hover, .alert a:hover {
   background: url('../img/design/wave_hover.svg');
   animation-play-state: running;
   background-repeat: repeat-x;
   background-size: 9px 5px;
+}
+
+.alert a {
+  color: inherit;
 }
 
 @keyframes move {
@@ -94,7 +109,7 @@ h4 a, h4 a:hover {
 }
 
 h2.heading {
-  font-family: "Gabarito", sans-serif;
+  font-family: 'Gabarito', sans-serif;
   font-weight: 900;
   font-size: 3rem;
   color: hsla(0,0%,0%,0);
@@ -103,10 +118,10 @@ h2.heading {
   letter-spacing: 0.03em;
   line-height: 1;
   text-shadow: 
-    #fff 0 0px 1px, 
-    #ddd 0 1px 1px, 
-    #ccc 0 3px 2px,
-    #bbb 0 5px 2px, 
+    var(--raptures-light) 0 0px 1px, 
+    var(--pale-cucumber) 0 1px 1px, 
+    var(--sage-splendor) 0 3px 2px,
+    var(--great-green) 0 5px 2px, 
     rgba(0,0,0,0.2) 0 0px 0px, 
     rgba(0,0,0,0.1) 0 5px 0px,
     rgba(0,0,0,0.2) 0 10px 0px;
@@ -127,7 +142,7 @@ h2.heading {
 .side-panel {
   width: 100vw;
   height: 4.5rem;
-  background: var(--glass-white);
+  background: var(--glass-light);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   z-index: 9999;
@@ -145,7 +160,7 @@ h2.heading {
 }
 
 .side-panel a, .side-panel .btn-empty, .side-panel a:hover, .side-panel a:active, .side-panel a:visited, .side-panel a:visited:hover {
-  color: #fff !important;
+  color: var(--raptures-light); !important;
 }
 
 .side-panel a i {
@@ -158,10 +173,10 @@ h2.heading {
 
 .side-panel a:hover i {
   text-shadow: 
-    #fff 0px 0 1px,
-    #ddd -7px 0 3px,
-    #ccc -14px 0 5px,
-    #bbb 2px 0 7px,
+    var(--raptures-light) 0px 0 1px,
+    var(--slippery-soap) -7px 0 3px,
+    var(--frost) -14px 0 5px,
+    var(--white-asparagus) 2px 0 7px,
     rgba(0,0,0,0.5) 0 0 5px;
 }
 
@@ -177,7 +192,7 @@ h2.heading {
   	right: 0rem;
   	width: 4.5rem;
   	height: 100vh;
-    border-left: var(--glass-white-border);
+    border-left: var(--glass-light-border);
     transition: width 0.2s ease-in-out;
   }
 
@@ -289,7 +304,6 @@ h2.heading {
 
 .sunrise {
   z-index: 1;
-/*  animation: sunrise 10s cubic-bezier(0,.69,.87,.92);*/
   animation: sunrise 45s linear;
   filter: opacity(0);
 }
@@ -352,7 +366,7 @@ h2.heading {
 }
 
 #lab-title p {
-  font-family: "Gabarito", sans-serif;
+  font-family: 'Gabarito', sans-serif;
   font-weight: 900;
   font-size: 10vw;
   text-transform: uppercase;
@@ -361,10 +375,10 @@ h2.heading {
   letter-spacing: 0.03em;
   line-height: 1;
   text-shadow: 
-    #fff 0 0px 1px, 
-    #ddd 0 1px 1px, 
-    #ccc 0 3px 2px,
-    #bbb 0 5px 2px, 
+    var(--raptures-light) 0 0px 1px, 
+    var(--pale-cucumber) 0 1px 1px, 
+    var(--sage-splendor) 0 3px 2px,
+    var(--great-green) 0 5px 2px, 
     rgba(0,0,0,0.2) 0 0px 0px, 
     rgba(0,0,0,0.1) 0 5px 0px,
     rgba(0,0,0,0.2) 0 10px 0px;
@@ -388,42 +402,30 @@ h2.heading {
   }
 }
 
-p.page-header {
-  font-family: "Gabarito", sans-serif;
+p.page-header, h1.page-title {
+  font-family: 'Gabarito', sans-serif;
   font-weight: 900;
   color: hsla(0,0%,0%,0);
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.03em;
   line-height: 1;
-  transform: rotate(-2deg) rotateX(30deg) skewX(1deg);
   text-shadow: 
-    #fff 0 0px 1px, 
-    #ddd 0 1px 1px, 
-    #ccc 0 3px 2px,
-    #bbb 0 5px 2px, 
+    var(--raptures-light) 0 0px 1px,
+    var(--pale-cucumber) 0 1px 1px,
+    var(--sage-splendor) 0 3px 2px,
+    var(--great-green) 0 5px 2px,
     rgba(0,0,0,0.2) 0 0px 0px, 
     rgba(0,0,0,0.1) 0 5px 0px,
     rgba(0,0,0,0.2) 0 10px 0px; 
 }
 
+p.page-header {
+  transform: rotate(-2deg) rotateX(24deg) skewX(-1deg);
+}
+
 h1.page-title {
-  font-family: "Gabarito", sans-serif;
-  font-weight: 900;
-  color: hsla(0,0%,0%,0);
-  text-transform: uppercase;
-  text-align: center;
-  letter-spacing: 0.03em;
-  line-height: 1;
-  transform: rotate(2deg) rotateX(30deg) skewX(1deg);
-  text-shadow: 
-    #fff 0 0px 1px, 
-    #ddd 0 1px 1px, 
-    #ccc 0 3px 2px,
-    #bbb 0 5px 2px, 
-    rgba(0,0,0,0.2) 0 0px 0px, 
-    rgba(0,0,0,0.1) 0 5px 0px,
-    rgba(0,0,0,0.2) 0 10px 0px;
+  transform: rotate(2deg) rotateX(24deg) skewX(-1deg);
 }
 
 #lab-title .the {
@@ -462,13 +464,6 @@ h1.page-title {
   animation-fill-mode: backwards;
 }
 
-#lab-title .construction {
-  animation: labtitleAnimate 1s; 
-  animation-delay: 1.7s;
-  animation-fill-mode: backwards;
-  color: #d02c2cf4;
-}
-
 /* 4.2.3 Jumbotron nav */
 
 .jumbotron-nav {
@@ -483,7 +478,7 @@ h1.page-title {
 
 .jumbotron-nav a {
   font-size: 1.5rem;
-  color: #fff;
+  color: var(--raptures-light);
   text-align: center;
   line-height: 2;
   text-decoration: none;
@@ -491,21 +486,21 @@ h1.page-title {
 }
 
 .jumbotron-nav a:hover, .jumbotron-nav a:active, .jumbotron-nav a:focus, .jumbotron-nav a:visited {
-  color: #fff;
+  color: var(--raptures-light);
 }
 
 .jumbotron-nav a i {
-  color: #fff;
+  color: var(--raptures-light);
   transition: text-shadow 0.2s ease-in-out;
 }
 
 .jumbotron-nav a:hover i {
-  color: #fff;
+  color: var(--raptures-light);
   text-shadow: 
-    #fff 0px 0 1px,
-    #ddd -10px 0 3px,
-    #ccc -20px 0 5px,
-    #bbb 2px 0 7px,
+    var(--raptures-light) 0px 0 1px,
+    var(--slippery-soap) -10px 0 3px,
+    var(--frost) -20px 0 5px,
+    var(--white-asparagus) 2px 0 7px,
     rgba(0,0,0,0.5) 0 0 5px;
 }
 
@@ -603,27 +598,27 @@ h1.page-title {
 /* 4.3 Buttons */
 
 .btn-outline-primary {
-  --bs-btn-color: var(--glass-white-text);
-  --bs-btn-border-color: var(--glass-white);
-  --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: var(--glass-white);
-  --bs-btn-hover-border-color: var(--glass-white-border);
+  --bs-btn-color: var(--glass-light-text);
+  --bs-btn-border-color: var(--glass-light);
+  --bs-btn-hover-color: var(--raptures-light);
+  --bs-btn-hover-bg: var(--glass-light);
+  --bs-btn-hover-border-color: var(--glass-light-border);
   --bs-btn-focus-shadow-rgb: 13, 110, 253;
-  --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: var(--glass-white-border);
-  --bs-btn-active-border-color: var(--glass-white);
+  --bs-btn-active-color: var(--raptures-light);
+  --bs-btn-active-bg: var(--glass-light-border);
+  --bs-btn-active-border-color: var(--glass-light);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #0d6efd;
-  --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #0d6efd;
+/*  --bs-btn-disabled-color: #0d6efd;*/
+/*  --bs-btn-disabled-bg: transparent;*/
+/*  --bs-btn-disabled-border-color: #0d6efd;*/
 }
 
 /* 4.4 Modals */
 
 .modal {
   --bs-modal-color: ;
-  --bs-modal-bg: var(--glass-white);
-  --bs-modal-border-color: var(--glass-white-border);
+  --bs-modal-bg: var(--glass-light);
+  --bs-modal-border-color: var(--glass-light-border);
   --bs-modal-border-radius: var(--bs-border-radius-lg);
   --bs-modal-box-shadow: var(--bs-box-shadow-sm);
   --bs-modal-inner-border-radius: calc(var(--bs-border-radius-lg) - (var(--bs-border-width)));
@@ -646,7 +641,7 @@ h1.page-title {
 /* 4.5 Footer */
 
 footer {
-  background: #124035ff;
+  background: var(--botanical-night);
 }
 
 .footer-logo {
@@ -658,7 +653,7 @@ footer h1 {
 }
 
 footer h3 {
-  font-family: "Gabarito", sans-serif;
+  font-family: 'Gabarito', sans-serif;
   font-weight: 900;
   font-size: 1.5rem;
   color: hsla(0,0%,0%,0);
@@ -667,10 +662,10 @@ footer h3 {
   letter-spacing: 0.03em;
   line-height: 1;
   text-shadow: 
-    #2B7D50 0px 0px 1px,
-    #236C4D 0px 0px 1px,
-    #1E6047 0px 2px 1px,
-    #175041 0px 3px 1px;
+    var(--amazon) 0px 0px 1px,
+    var(--cloudy-camouflage) 0px 0px 1px,
+    var(--green-paw-paw) 0px 2px 1px,
+    var(--evergreen) 0px 3px 1px;
   transform: rotate(-1.5deg) rotateX(19deg) skewX(-11deg);
   margin-bottom: 1rem;
 }
@@ -687,22 +682,32 @@ footer ul {
 }
 
 footer li a {
-  color: var(--bs-body-color);
+  color: var(--raptures-light);
   text-decoration: none;
 }
 
 
 footer .fa-solid, footer .fa-brands {
-  color: #2B7D50;
+  color: var(--amazon);
 }
 
 /* 4.6. Cards */
 
 .card {
   --bs-card-border-width: 2px;
-  --bs-card-border-color: #2B7D50;
+  --bs-card-border-color: var(--amazon);
   --bs-card-border-radius: 35px 25px 20px 15px;
   --bs-card-bg: transparent;
+}
+
+.card-body {
+  color: var(--raptures-light);
+}
+
+.card-basic {
+  --bs-card-border-width: 0;
+  --bs-card-border-radius: 15px;
+  --bs-card-bg: var(--botanical-night);
 }
 
 .card-img-bottom {
@@ -712,21 +717,31 @@ footer .fa-solid, footer .fa-brands {
 }
 
 .card h5 {
-  font-family: "Gabarito", sans-serif;
+  font-family: 'Gabarito', sans-serif;
   font-weight: 900;
   font-size: 1.5rem;
   color: hsla(0,0%,0%,0);
   text-shadow: 
-    #dee2e6 0px 0px 1px,
-    #236c4dff 0px 0px 1px,
-/*    #26714cff 0px 2px 1px,*/
-    #236c4dff 0px 3px 1px;
+    var(--raptures-light) 0px 0px 1px,
+    var(--cloudy-camouflage) 0px 0px 1px,
+    var(--cloudy-camouflage) 0px 3px 1px;
   text-transform: uppercase;
   text-align: center;
   letter-spacing: 0.03em;
   line-height: 1;
   transform: rotate(-1.5deg) rotateX(19deg) skewX(-11deg);
   margin-bottom: 1rem;
+}
+
+.card-basic h5 {
+  font-family: 'Manjari', sans-serif;
+  font-weight: 400;
+  font-size: 1.15rem;
+  color: var(--mermaid-tears);
+  text-align: left;
+  text-shadow: none;
+  text-transform: none;
+  transform: none;
 }
 
 .card-list li i {
@@ -736,13 +751,20 @@ footer .fa-solid, footer .fa-brands {
 .card-list ul {
   font-size: 1.5rem;
 /*  opacity: 0.7*/
-  color: #98ba7cff;
+  color: var(--mermaid-tears);
+}
+
+.card span {
+  color: var(--cloudy-camouflage);
+  background-color: var(--evergreen);  
+  width: 50px;
+  height: 50px;
 }
 
 /* 4.7 Alerts */
 
 .alert-primary {
-  --bs-alert-color: var(--kiss-a-frog);
+  --bs-alert-color: var(--mermaid-tears);
   --bs-alert-bg: var(--botanical-night);
   --bs-alert-border-color: transparent;
   font-size: 1.15rem;
@@ -760,7 +782,7 @@ footer .fa-solid, footer .fa-brands {
 /* 5.1 Content */
 
 .content h6 {
-  color: #B8C78A;
+  color: var(--sage-sensation);
 }
 
 .content iframe, .content-thumbnail {
@@ -771,7 +793,7 @@ footer .fa-solid, footer .fa-brands {
   font-size: 1.25rem;
   text-align: center;
     text-shadow: 
-    #fff 0 0px 1px, 
+    var(--raptures-light) 0 0px 1px, 
     rgba(0,0,0,0.2) 0 0px 0px, 
     rgba(0,0,0,0.1) 0 1px 0px,
     rgba(0,0,0,0.2) 0 2px 0px
@@ -780,7 +802,7 @@ footer .fa-solid, footer .fa-brands {
 /* 5.2 Events */
 
 .event-date {
-  background-color: #124236;
+  background-color: var(--botanical-night);
   display: flex;
   flex-direction: column;
   align-self: flex-start;
@@ -791,7 +813,7 @@ footer .fa-solid, footer .fa-brands {
 .event-date h1, .event-date h2 {
   margin-bottom: 0;
   line-height: 1;
-  color: var(--ferntastic);
+  color: var(--last-of-lettuce);
 }
 
 /*.event .list-inline {
