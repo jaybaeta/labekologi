@@ -111,7 +111,7 @@ h4 a, h4 a:hover {
 h2.heading {
   font-family: 'Gabarito', sans-serif;
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: hsla(0,0%,0%,0);
   text-transform: uppercase;
   text-align: center;
@@ -128,11 +128,19 @@ h2.heading {
 }
 
 .rotate-2deg {
-  transform: rotate(2deg) rotateX(30deg) skewX(1deg);
+  transform: rotate(2deg) rotateX(24deg) skewX(1deg);
+}
+
+.rotate-1deg {
+  transform: rotate(1deg) rotateX(24deg) skewX(1deg);
+}
+
+.rotate-05deg {
+  transform: rotate(0.5deg) rotateX(24deg) skewX(1deg);
 }
 
 .rotate-neg1deg {
-  transform: rotate(-1deg) rotateX(30deg) skewX(1deg);
+  transform: rotate(-1deg) rotateX(24deg) skewX(1deg);
 }
 
 /* 4. Elements */
@@ -738,7 +746,6 @@ footer .fa-solid, footer .fa-brands {
   font-weight: 400;
   font-size: 1.15rem;
   color: var(--mermaid-tears);
-  text-align: left;
   text-shadow: none;
   text-transform: none;
   transform: none;
@@ -756,10 +763,14 @@ footer .fa-solid, footer .fa-brands {
 
 .card span {
   color: var(--cloudy-camouflage);
-  background-color: var(--evergreen);  
   width: 50px;
   height: 50px;
 }
+
+.card span.rounded-circle {
+  background-color: var(--evergreen);
+}
+
 
 /* 4.7 Alerts */
 
