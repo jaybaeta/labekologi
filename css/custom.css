@@ -854,10 +854,6 @@ ol li::marker {
 
 .event .date {
   background-color: var(--botanical-night);
-  display: flex;
-  flex-direction: column;
-  align-self: flex-start;
-  align-items: flex-end;
   border-radius: 25px 10px 15px 5px;
 }
 
@@ -867,7 +863,30 @@ ol li::marker {
   color: var(--last-of-lettuce);
 }
 
-/*.event .list-inline {
-  color: var(--ferntastic);
+.event .title {
+  font-family: 'Gabarito', sans-serif;
+  font-weight: 900;
+  color: hsla(0,0%,0%,0);
+  text-shadow: 
+    var(--raptures-light) 0px 0px 1px,
+    var(--cloudy-camouflage) 0px 0px 1px,
+    var(--cloudy-camouflage) 0px 3px 1px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  line-height: 1;
+  transform: rotate(-0.5deg) rotateX(11deg) skewX(-7deg);
+  margin-bottom: 1rem;
 }
-*/
+
+.event .subtitle {
+  color: var(--argula);
+}
+
+.event ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.event .fa-solid {
+  color: var(--argula);
+}
