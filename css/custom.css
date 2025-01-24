@@ -803,6 +803,31 @@ ol li::marker {
   color: var(--wild-forest);
 }
 
+/* 4.9 Custom widths */
+
+
+@media (min-width: 768px) {
+  .w-md-25 {
+    width: 25%;
+  }
+
+  .w-md-50 {
+    width: 50%;
+  }
+}
+
+
+@media (min-width: 576px) {
+  .w-sm-25 {
+    width: 25%;
+  }
+
+  .w-sm-50 {
+    width: 50%;
+  }
+}
+
+
 /* 5. Page-specific */
 
 /* 5.1 Content */
@@ -827,7 +852,7 @@ ol li::marker {
 
 /* 5.2 Events */
 
-.event-date {
+.event .date {
   background-color: var(--botanical-night);
   display: flex;
   flex-direction: column;
@@ -836,7 +861,7 @@ ol li::marker {
   border-radius: 25px 10px 15px 5px;
 }
 
-.event-date h1, .event-date h2 {
+.event .date h1, .event .date h2 {
   margin-bottom: 0;
   line-height: 1;
   color: var(--last-of-lettuce);
