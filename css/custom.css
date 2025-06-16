@@ -1,9 +1,8 @@
 /*//
 
-The Laboratory of Ecology and Conservation, Universitas Gadjah Mada
-
 (c) Joaquim Baeta
   for the Laboratory of Ecology and Conservation, Universitas Gadjah Mada
+  Version 1.1 (2025.06.16)
 
 1......... Root
 2......... Base
@@ -491,7 +490,7 @@ h1.page-title {
 }
 
 .jumbotron-nav a {
-  font-size: 1.5rem;
+  font-size: 1.33rem;
   color: var(--raptures-light);
   text-align: center;
   line-height: 2;
@@ -501,6 +500,7 @@ h1.page-title {
 
 .jumbotron-nav a:hover, .jumbotron-nav a:active, .jumbotron-nav a:focus, .jumbotron-nav a:visited {
   color: var(--raptures-light);
+  background: none;
 }
 
 .jumbotron-nav a i {
