@@ -2,7 +2,7 @@
 
 (c) Joaquim Baeta
   for the Laboratory of Ecology and Conservation, Universitas Gadjah Mada
-  Version 1.1 (2025.06.16)
+  Version 1.1.1 (2025.12.30)
 
 1......... Root
 2......... Base
@@ -36,7 +36,7 @@
     --bold-irish: hsl(143 48 35);
     --wild-forest: hsl(137 45 40);
     --kryptonite-green: hsl(125 34 46);
-    --argula: hsl(109 35 51);
+    --arugula: hsl(109 35 51);
     --ultra-green: hsl(98 44 55);
     --fairy-tale-green: hsl(90 56 59);
     --last-of-lettuce: hsl(86 60 62);
@@ -787,7 +787,7 @@ footer .fa-solid, footer .fa-brands {
   font-size: 1.15rem;
 }
 
-.alert-primary span {
+.alert-primary span:first-child {
   color: var(--cloudy-camouflage);
   background-color: var(--evergreen);  
   width: 50px;
