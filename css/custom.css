@@ -831,6 +831,7 @@ ol li::marker {
 /* 4.10 Tables */
 
 .table > :not(caption) > * > * {
+  color: var(--raptures-light);
   background-color: var(--evergreen);
   border-color: var(--botanical-night);
 }
