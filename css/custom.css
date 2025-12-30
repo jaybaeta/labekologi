@@ -2,7 +2,7 @@
 
 (c) Joaquim Baeta
   for the Laboratory of Ecology and Conservation, Universitas Gadjah Mada
-  Version 1.1.1 (2025.12.30)
+  Version 1.1.2 (2025.12.30)
 
 1......... Root
 2......... Base
@@ -19,6 +19,8 @@
   4.6..... Cards
   4.7..... Alerts
   4.8..... Lists
+  4.9..... Custom widths
+  4.10.... Tables
 5......... Page-specific
   5.1..... Content
   5.2..... Events
@@ -816,7 +818,6 @@ ol li::marker {
   }
 }
 
-
 @media (min-width: 576px) {
   .w-sm-25 {
     width: 25%;
@@ -827,6 +828,18 @@ ol li::marker {
   }
 }
 
+/* 4.10 Tables */
+
+.table > :not(caption) > * > * {
+  background-color: var(--evergreen);
+  border-color: var(--botanical-night);
+}
+
+.table th {
+  font-weight: 400;
+  background-color: var(--botanical-night);
+  border-bottom: none;
+}
 
 /* 5. Page-specific */
 
