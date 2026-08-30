@@ -2,7 +2,7 @@
 
 (c) Joaquim Baeta
   for the Laboratory of Ecology and Conservation, Universitas Gadjah Mada
-  Version 1.2.0 (2026.08.30)
+  Version 1.2.1 (2026.08.30)
 
 1......... Root
 2......... Base
@@ -67,6 +67,34 @@ body {
 }
 
 /* 3. Typography */
+
+@font-face {
+  font-family: 'Gabarito';
+  src: url('../fonts/Gabarito-Variable.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400 900;
+}
+
+@font-face {
+  font-family: 'Manjari';
+  src: url('../fonts/Manjari-Thin.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 100;
+}
+
+@font-face {
+  font-family: 'Manjari';
+  src: url('../fonts/Manjari-Regular.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Manjari';
+  src: url('../fonts/Manjari-Bold.woff2') format('woff2');
+  font-style: normal;
+  font-weight: 700;
+}
 
 p a, li a, .alert a, .figure-caption a {
   color: var(--raptures-light);
